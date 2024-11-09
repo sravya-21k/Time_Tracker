@@ -4,9 +4,106 @@
     <script src="app.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,
+500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&
+family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Time Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <!-- HTML Goes here! -->
+    <div id="Time-tracker">
+      <div class="grid-container">
+        <div class="header">
+          <div class="Reporter-profile">
+            <img
+              class="profile-img"
+              src="./images/image-jeremy.png"
+              alt="Reporter image"
+            />
+
+            <h1>Report for<span>Jeremy Robson</span></h1>
+          </div>
+          <div class="activity-buttons">
+            <button id="dialy-btn">Daily</button>
+            <button id="weekly-btn">Weekly</button>
+            <button id="monthly-btn">Monthly</button>
+          </div>
+        </div>
+
+        <div class="work-image img">
+          <div class="work section">
+            <div class="title">
+              <h4>work</h4>
+              <img class="dots-icon" src="./images/icon-ellipsis.svg" alt="" />
+            </div>
+            <h2>32hrs</h2>
+            <p>Last week-36hrs</p>
+          </div>
+        </div>
+
+        <div class="play-image img">
+          <div class="play section">
+            <div class="title">
+              <h4>Play</h4>
+              <img class="dots-icon" src="./images/icon-ellipsis.svg" alt="" />
+            </div>
+            <h2>10hrs</h2>
+            <p>Last week-8hrs</p>
+          </div>
+        </div>
+
+        <div class="study-image img">
+          <div class="study section">
+            <div class="title">
+              <h4>Study</h4>
+              <img class="dots-icon" src="./images/icon-ellipsis.svg" alt="" />
+            </div>
+            <h2>4hrs</h2>
+            <p>Last week-7hrs</p>
+          </div>
+        </div>
+
+        <div class="exercise-image img">
+          <div class="exercise section">
+            <div class="title">
+              <h4>Exercise</h4>
+
+              <img class="dots-icon" src="./images/icon-ellipsis.svg" alt="" />
+            </div>
+            <h2>4hrs</h2>
+            <p>Last week-5hrs</p>
+          </div>
+        </div>
+
+        <div class="social-image img">
+          <div class="social section">
+            <div class="title">
+              <h4>Social</h4>
+
+              <img class="dots-icon" src="./images/icon-ellipsis.svg" alt="" />
+            </div>
+            <h2>5hrs</h2>
+            <p>Last week-10hrs</p>
+          </div>
+        </div>
+        <div class="Selfcare-image img">
+          <div class="self Care section">
+            <div class="title">
+              <h4>Self care</h4>
+              <img class="dots-icon" src="./images/icon-ellipsis.svg" alt="" />
+            </div>
+            <h2>2hrs</h2>
+            <p>Last week-2hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

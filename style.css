@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 1em;
+  max-width: 1440px;
+  gap: 5px;
+}
+#Time-tracker {
+  background-color: hsl(226, 43%, 10%);
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 0;
+}
+.grid-container {
+  display: grid;
+  height: 520px;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  max-width: 1110px;
+  margin: 20px;
+  padding: 2.5em;
+}
+.profile-img {
+  width: 50px;
+  border-radius: 100%;
+  border: 2px solid white;
+  margin-right: 1.3em;
+}
+
+.Reporter-profile {
+  background: hsl(246, 80%, 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5em;
+  border-radius: 15px;
+}
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  text-align: start;
+  line-height: 2.5em;
+  font-weight: 100;
+  color: white;
+}
+span {
+  line-height: 1.2em;
+  font-weight: 300;
+  font-size: 28px;
+  color: white;
+}
+h2 {
+  font-size: 2.5em;
+  font-weight: 100;
+}
+
+.activity-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  line-height: 1.5px;
+  padding: 1.5em;
+  gap: 20px;
+  border-radius: 15px;
+}
+button {
+  border: none;
+
+  background: none;
+
+  color: hsl(236, 100%, 87%);
+  font-size: 1em;
+  font-weight: 100;
+  cursor: pointer;
+}
+.header {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  width: 100%;
+  grid-row: span 2;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+.dots-icon {
+  height: 5px;
+}
+p {
+  font-size: 1em;
+  font-weight: 100;
+}
+.section {
+  width: 100%;
+  height: 80%;
+  border-radius: 15px;
+  background-color: hsl(235, 46%, 20%);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px 25px 50px;
+
+  color: white;
+  grid-column: span 1;
+}
+.work section {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.exercise section {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top 0px right 20px;
+  border-radius: 15px;
+  position: relative;
+  background-size: 4em;
+  margin-bottom: -1em;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(./images/icon-work.svg);
+}
+.work-image {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(./images/icon-work.svg);
+}
+
+.play-image {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(./images/icon-play.svg);
+}
+.study-image {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(./images/icon-study.svg);
+}
+.exercise-image {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(./images/icon-exercise.svg);
+}
+.social-image {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(./images/icon-social.svg);
+}
+.Selfcare-image {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(./images/icon-self-care.svg);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-color: hsl(226, 43%, 10%);
+    margin: 0;
+    min-height: 100vh; /* Ensure body spans the full viewport height */
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 1.5em;
+    padding: 1em;
+    width: 100%;
+  }
+}
+
+@media only screen and(min-width: 1440px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    padding: 2em;
+  }
+  #Time-tracker {
+    padding: 2em 0;
+  }
+}
